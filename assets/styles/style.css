@@ -1,0 +1,268 @@
+:root {
+  --dark-purple: #231d27;
+  --light-aqua: #1b959e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #c4c4c4;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--dark-purple);
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+}
+
+header {
+  position: relative;
+}
+
+.subtitle {
+  position: absolute;
+  font-size: 2rem;
+  bottom: .5vh;
+  right: .8vw;
+  font-weight: bold;
+  color: var(--light-aqua);
+  padding: 10px;
+  background-color: var(--dark-purple);
+}
+
+.header-img {
+  background-color: aquamarine;
+  height: 22vh;
+  width: 100vw;
+  background-image: url(../images/bluesky.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4.5rem;
+  padding: 0 2vw;
+  color: var(--dark-purple);
+  background-color: var(--light-aqua);
+}
+
+.information {
+  text-align: right;
+}
+
+.information li {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.7vw;
+  padding: 10px;
+}
+
+ul a {
+  color: var(--light-aqua);
+  text-decoration: underline solid var(--light-aqua) 5px;
+  padding: 10px;
+}
+
+.information a:hover {
+  color: var(--dark-purple);
+  transition: all 400ms ease-in;
+  background-color: var(--light-aqua);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  justify-content: center;
+  max-width: 80vw;
+}
+
+.section-one,
+.section-two,
+.multiple,
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+  display: block;
+  width: 30%;
+  color: var(--dark-purple);
+  border-right: 4px solid var(--dark-purple);
+  text-align: right;
+}
+
+.about-me {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px;
+  color: var(--dark-purple);
+}
+
+.work-section {
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.product-one {
+  width: 100%;
+}
+
+.multiple {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-one,
+.product-two,
+.product-three,
+.product-four,
+.product-five {
+  border: 4px solid #2df7f7;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.product-two,
+.product-three,
+.product-four,
+.product-five {
+  background-color: blueviolet;
+  width: 45%;
+}
+
+.Javascript,
+.social-app,
+.responsive-display,
+.security-features,
+.photo-web {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 0.75vw;
+  color: var(--dark-purple);
+  background-color: var(--light-aqua);
+  display: block;
+  position: absolute;
+  bottom: 40px;
+}
+
+.footer-ul {
+  width: 60%;
+  font-size: 16px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-one,
+  .section-two,
+  .multiple,
+  .footer {
+    flex-direction: column;
+    display: inline-block;
+  }
+
+  .section-one h2,
+  .section-two h2, .footer h2 {
+    border-bottom: 4px solid var(--dark-purple);
+    border-right: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-me,
+  .work-section {
+    width: 100%;
+  }
+  .product-two,
+  .product-three,
+  .product-four,
+  .product-five {
+    width: 100%;
+  }
+
+.footer ul {
+  width: 100%;
+}
+
+@media screen and (max-width: 710px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .information li {
+    font-size: 1rem ;  
+  }
+  .header-img {
+    height: 18vh;
+  }
+
+.Javascript,
+.social-app,
+.responsive-display,
+.security-features,
+.photo-web {
+font-size: 2.5vw;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+  .header {
+height: 12vh;
+  }
+
+  .information {
+    text-align: left;
+    
+  }
+
+  .information li {
+    margin: 0;
+  }.information li {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .information li {
+    margin: -5vw;
+  }
+  
+  ul a {
+    color: var(--light-aqua);
+    text-decoration: underline solid var(--light-aqua) 3px;
+    padding: 10px;
+  }
+}
