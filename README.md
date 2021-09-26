@@ -8,7 +8,7 @@
 
 ## Portfolio
 
-![css-portfolio](./assets/images/screenshot_Portfolio.PNG)
+![css-portfolio](./assets/images/screenshot_Portfolio.png)
 
 ## Recent works
 
